@@ -15,6 +15,8 @@ queries are to fetch data.
 
 mutations to modify server side data.
 
+schema
+
 If queries are the graphQL equivalent to GET calls in the REST, then mutations represent the state changing methods in REST(like DELETE, PUT, PATCH)
 
 One true difference between a query and a mutation, at least structurally, is the operation type.
@@ -40,6 +42,12 @@ BETTER UNDERSTANDING: https://www.apollographql.com/blog/graphql/basics/mutation
 | use cases                 | multiple microservices, mobile apps | simple apps, resource-driven apps |
 
 In short, GraphQL is a tool to achieve specific query oriented goals; however, it’s not a solution for all the API related challenges and certainly not a replacement for REST.
+
+{
+    allPerson(last : 2) { root field of query 
+        name  payload of the query 
+        }
+    }
 
 
 ### Intro
