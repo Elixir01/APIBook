@@ -1,5 +1,47 @@
 # Demo Project Book API
 
+why to use graphql?
+
+designed to make APIs fast, flexible, and developer-friendly.
+It lets developers construct requests that` pull data from multiple data sources in a single API call.`
+GraphQL self documenting exist and rest are not.
+
+In graph ql,
+there are only `two types of operations you can perform: queries and mutations`.
+
+
+queries are to fetch data.
+
+
+mutations to modify server side data.
+
+If queries are the graphQL equivalent to GET calls in the REST, then mutations represent the state changing methods in REST(like DELETE, PUT, PATCH)
+
+One true difference between a query and a mutation, at least structurally, is the operation type.
+We use the word query for queries and mutation for mutations.
+
+
+BETTER UNDERSTANDING: https://www.apollographql.com/blog/graphql/basics/mutation-vs-query-when-to-use-graphql-mutation/
+
+|                           | GraphQL    | REST  |
+| ------- | --- | --- |
+| Architecture              | client-driven | server-driven |
+| Organized in terms of     | schema and type-system | endpoints |
+| Operations                | query mutation subscription | create, read, update, delete |
+| Data fetching             | specific data with single api call | fixed data with multiple API calls |
+| Community                 | growing | large |
+| Performance               | fast | multiple network calls take up more time |
+| Development Speed         | rapid | slower |
+| Learning curve            | difficult | moderate |
+| Self-documenting          | yes  | no |
+| File uploading            | no | yes |
+| Web Caching               | (via libraries built on top) Apollo | yes |
+| Stability                 | less error prone, automatic validation and type checking  | better choice for complex queries |
+| use cases                 | multiple microservices, mobile apps | simple apps, resource-driven apps |
+
+In short, GraphQL is a tool to achieve specific query oriented goals; however, it’s not a solution for all the API related challenges and certainly not a replacement for REST.
+
+
 ### Intro
 Demo POC project for GraphQl + Spring Boot. 
 The project uses graphql to create a simple book and author schema to demonstrate the use of GraphQl
